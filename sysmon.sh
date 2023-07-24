@@ -62,6 +62,8 @@ if [ "${ARCHITECTURE}" = 'x86_64' ]; then
       fi
       case "$DIST_VERSION" in
         18.04 | 20.04 | 21.04)
+        #The following line has been added to install dependancies
+          eval $SUDO $pkgMgr build-essential gcc g++ make cmake libelf-dev llvm clang libxml2 libxml2-dev libzstd1 git libgtest-dev apt-transport-https dirmngr monodevelop googletest google-mock libgmock-dev libjson-glib-dev
           wget -q https://packages.microsoft.com/config/ubuntu/$DIST_VERSION/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
           eval $SUDO dpkg -i packages-microsoft-prod.deb
           eval $SUDO apt-get update
