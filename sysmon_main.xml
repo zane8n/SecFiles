@@ -150,6 +150,7 @@ NG FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
           <Image condition="end with">wget</Image>
           <Image condition="end with">curl</Image>
           <Image condition="end with">ftpget</Image>
+          <Image condition="end with">ping</Image>        
           <Image condition="end with">tftp</Image>
           <Image condition="end with">lwp-download</Image>
         </Rule>
