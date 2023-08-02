@@ -43,7 +43,7 @@ fi
 
 # Architecture
 ARCHITECTURE=$(uname -m)
-
+sysmonConfigUrl='https://raw.githubusercontent.com/zane8n/SecFiles/main/Linuxsysmon_mainConf.xml'
 # Set package to latest GitHub release:
 # Get distribution list
 LSB_DIST="$(. /etc/os-release && echo "$ID")"
